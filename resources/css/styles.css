@@ -1,0 +1,131 @@
+/*---General---*/
+body{
+    min-height: 100vh;
+    position: relative;
+}
+.row{
+    margin:0;
+}
+.container-fluid{
+    padding:0;
+}
+.btn-primary{
+    background-color: transparent ;
+    border:2px solid black;
+    color: black;
+}
+.btn-primary:hover{
+    transition: 0.4s;
+    scale: 1.1;
+}
+#news-container{
+    padding:0 5% 3%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    align-items: center;
+}
+#news-container .card{
+    flex:1 1 0;
+    max-width:80%;
+    border-radius: 10px;
+    padding:0;
+    margin: 5px ;
+}
+#news-container img{
+    width: 200px;
+    object-fit: fill;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+}
+.card .card-date{
+    font-size: 12px;
+    color: #CCC;
+}
+.card .card-title{
+    font-size: 20px;
+    color: #212121;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Create News */
+#news-create-container{
+    padding: 2%;
+}
+#news-create-container label{
+    font-weight: bold;
+}
+#news-create-container input,
+#news-create-container textarea,
+#news-create-container select{
+    font-weight: bold;
+}
+#news-create-container .form-group{
+    margin:2% 0;
+}
+/*---Flash Messages---*/
+.msg{
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+/*--ABAS--*/
+.menu {
+    list-style: none;   
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display:inline-block;
+    padding: 6px;
+    border: 1px solid #DDD;
+    border-radius: 2px; 
+    margin-right: 4px;
+    border-bottom: 0;
+}   
+article {
+	position: relative;
+}
+
+.abas {
+	position: absolute;
+	border: 1px solid #DDD;
+	border-radius: 2px;
+	background: #FFF;
+    width: 100%;
+    height: 100vh;
+	z-index: 0;
+}
+
+.abas.active {
+    z-index: 1;
+}
+
+.abas:target {
+    z-index: 2
+}
+.delete-btn{
+    color:black;
+}
+.edit-btn{
+    float: left;
+    margin: 0 3% 0 0;
+}
+
+/*--Pag de Alterar News--*/
+
+.image-preview{
+    width: 20%;
+    margin-left:50%;
+}
+.justify-between p{
+    display: none;
+}
+.sm\:justify-between{
+    justify-content: center;
+}
