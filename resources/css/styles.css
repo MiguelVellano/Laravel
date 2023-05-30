@@ -129,3 +129,17 @@ article {
 .sm\:justify-between{
     justify-content: center;
 }
+/*--Show--*/
+#info-container-show{
+    padding: 3%;
+}
+#show{
+    padding: 5%;
+}
+#info-container-show p{
+    padding: 3% 0;
+}
+.news-date{
+    font-size: 12px;
+    color: #979797;
+}

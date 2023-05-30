@@ -24,7 +24,7 @@
         </div>
         <div class="form-group">
             <label for="title">Descrição:</label>
-            <textarea type="text" class="form-control" id="description" name="description" placeholder="Descrição da Notícia" value="{{$news->description}}"></textarea>
+            <textarea type="text" class="form-control" id="description" name="description" placeholder="Descrição da Notícia">{{$news->description}}</textarea>
         </div>
         <div class="form-group">
             <label for="title">Autor:</label>
